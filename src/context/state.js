@@ -4,11 +4,13 @@ export const AppContext = createContext();
 export function AppWrapper({ children }) {
 
     const [duviState, setDuviState] = useState({
-            step: "Home",
-            data: {
-            }
-        }
-    );
+      step: "Home",
+      resolutionType:null,
+      subject:null,
+      files: [],
+      qtd_problems: 0,
+      comments: ""
+    });
     return (
         <AppContext.Provider value={{ duviState, setDuviState }}>
             {children}
