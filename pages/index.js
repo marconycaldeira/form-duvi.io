@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <Container className="main-container" fluid>
       <Row className="h-50 justify-content-center">
-        <Col xs={6} className="text-center">
+        <Col xs={6} >
           <Component />
         </Col>
       </Row>
